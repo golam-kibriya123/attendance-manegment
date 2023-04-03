@@ -32,20 +32,21 @@
      text-align: center;
      margin-top: 20px;
      font-style: normal;
-    color: #92A3FD;
+     color: #92A3FD;
 
  }
- 
+
  .login-header h1 {
      font-weight: 700;
      font-size: 20px;
      line-height: 30px;
 
  }
-.login-header h1>span{   
-      color: #9DCEFF;
-      font-size: 22px;
-      font-weight: bolder;
+
+ .login-header h1>span {
+     color: #9DCEFF;
+     font-size: 22px;
+     font-weight: bolder;
 
  }
 
@@ -245,7 +246,8 @@
      color: #9DCEFF;
  }
 
- .register>span {     color: #92A3FD;
+ .register>span {
+     color: #92A3FD;
 
      text-decoration: underline;
      margin-left: 2px;
@@ -256,12 +258,81 @@
  /* responsive */
  @media (max-width: 600px) {
      body {
+         height: 100vh;
+
+     }
+
+     .part-one,
+     .part-two {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-self: center;
+     }
+
+     .login-form {
+         width: 300px;
+         overflow: hidden;
          height: 90vh;
 
      }
 
-     .login-form {
-         overflow-y: scroll;
-         height: 80vh;
+     .login-header {
+         width: 90%;
      }
+
+     .login-header h1 {
+         font-size: 15px;
+     }
+
+     .login-inputs {
+         width: 90%;
+     }
+
+     .border-input {
+         margin-right: 10px;
+         margin-left: 10px;
+     }
+
+     .border-input input {
+         width: 100%;
+     }
+
+
+     .login-btn {
+         width: 90%;
+         height: 40px;
+     }
+
+     .login-btn img {
+         width: 18px;
+     }
+
+     .l-span {
+         font-size: 16px;
+     }
+
+
+     .or,
+     .media {
+         width: 100%;
+     }
+
+     .media button {
+         width: 40px;
+         height: 40px;
+     }
+
+     .or::after,
+     .or::before {
+         width: 130px;
+     }
+
+     .register {
+         font-size: 14px;
+         width: 90%;
+     }
+
+
  }
