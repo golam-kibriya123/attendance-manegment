@@ -1,0 +1,130 @@
+.attendance-sheet {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid  hsla(210, 100%, 81%, 0.183);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+     background-color:#92A3FD ;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #ddd;
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+
+table tr:nth-child(odd) {
+    background-color:hsla(230, 96%, 78%, 0.432);
+}
+table tr:nth-child(even) {
+    background-color: hsla(210, 100%, 81%, 0.39);
+}
+
+/*  */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 0, 0, 0.114);
+}
+
+.checkbox-container input:checked+.checkmark {
+    background-color: hsla(120, 100%, 25%, 0.288);
+}
+
+.checkbox-container input:checked~.checkmark::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 3px;
+    height: 10px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+    background-color: #008000;
+    /* Add this line to change the color of the tick mark */
+}
+
+.checkbox-container input:checked~.checkmark::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    width: 3px;
+    height: 6px;
+    transform: rotate(120deg);
+    background-color: green;
+    /* Add this line to change the color of the tick mark */
+}
+
+.checkbox-container .checkmark::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 3px;
+    height: 10px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg);
+    background-color: hsla(0, 100%, 50%, 0.587);
+    /* Add this line to change the color of the tick mark */
+}
+
+.checkbox-container .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    width: 3px;
+    height: 6px;
+    transform: rotate(120deg);
+    background-color: red;
+    /* Add this line to change the color of the tick mark */
+}
